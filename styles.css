@@ -1,0 +1,62 @@
+
+body{
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    background-image: url("images/building.png");
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+
+.title{
+    padding-top: 120px;
+    font-size: 50px;
+    color: rgb(156, 155, 155);
+    text-align: center;
+}
+
+.textheader{
+    text-align: center;
+    color: #6b6b6b;
+    margin: 20px;
+}
+
+.textheader p{
+    margin: 0px;
+
+}
+
+.button{
+    width: 240px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fc1934;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+
+.button img{
+    width:40px;
+    height: 40px;
+}
+
+.button:hover{
+    background-color: #74131e;
+
+}
+
+
+.buttons{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
