@@ -12,6 +12,106 @@ header{
     margin: 0px;
 }
 
+/*navigation bar*/
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Header */
+.header{
+    position: sticky;
+    top: 0;
+}
+
+
+/* Nav menu */
+.nav{
+    width: 100%;
+    position: fixed;
+    background-color: gray;
+    overflow: hidden;
+    top: 55px;
+    margin-left:-10px;
+
+}
+
+.menu a{
+    display: inline-block;
+    padding: 10px;
+    color:white;
+}
+
+.menu a:hover{
+    background-color:rgb(31, 30, 30);
+}
+
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+/* Menu Icon */
+.hamb{
+    cursor: pointer;
+    float: left;
+    padding: 20px 15px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #323232;
+}/* Style label tag */
+
+
+.hamb-line {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 7px;
+}
+.hamb-line::after{
+    top: -7px;
+}
+
+.side-menu {
+    display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ .nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+
 .title{
     padding-top: 120px;
     font-size: 50px;
